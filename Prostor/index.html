@@ -28,14 +28,21 @@
             overflow: hidden;
         }
 
-        /* Примусова адаптація табличної верстки під мобільні екрани */
+        /* Адаптація табличної верстки */
         .cert-container table {
             width: 100% !important;
             max-width: 100% !important;
         }
-        .cert-container img {
+        .cert-container img:not(.icon-img) {
             max-width: 100% !important;
             height: auto !important;
+        }
+        /* Фіксований розмір для іконок списку */
+        .icon-img {
+            width: 48px !important;
+            min-width: 48px !important;
+            max-width: 48px !important;
+            height: 48px !important;
         }
         .cert-container td, 
         .cert-container div, 
@@ -47,7 +54,7 @@
             overflow-wrap: break-word;
         }
 
-        /* Оптимізація відступів та кнопок для екранів менше 600px */
+        /* Оптимізація відступів для екранів менше 600px */
         @media screen and (max-width: 600px) {
             .cert-container td {
                 padding-left: 16px !important;
@@ -98,7 +105,7 @@
                                 <td style="background-color:#c6fdd2;padding:32px 48px 12px 48px;text-align:left" align="left">
                                     <p style="font-size:16px;line-height:24px;font-weight:600;margin:0 0 12px 0;color:#000000"><span style="font-size:20px;margin-right:4px"><img data-emoji="⭐" alt="⭐" src="https://fonts.gstatic.com/s/e/notoemoji/17.0/2b50/32.png" loading="lazy"></span> Номінал: 100 грн.</p>
                                     <p style="font-size:16px;line-height:24px;font-weight:600;margin:0 0 12px 0;color:#000000"><span style="font-size:20px;margin-right:4px"><img data-emoji="⏰" alt="⏰" src="https://fonts.gstatic.com/s/e/notoemoji/17.0/23f0/32.png" loading="lazy"></span> Діє до: 11.03.2027</p>
-                                    <p style="font-size:16px;line-height:24px;font-weight:600;margin:0 0 12px 0;color:#000000"><span style="font-size:20px;margin-right:4px"><img data-emoji="😁" alt="😁" src="https://fonts.gstatic.com/s/e/notoemoji/17.0/1f601/32.png" loading="lazy"></span> Від кого: Нікіта та Юля</p>
+                                    <p style="font-size:16px;line-height:24px;font-weight:600;margin:0 0 12px 0;color:#000000"><span style="font-size:20px;margin-right:4px"><img data-emoji="😁" alt="😁" src="https://fonts.gstatic.com/s/e/notoemoji/17.0/1f601/32.png" loading="lazy"></span> Від кого: Нікіта</p>
                                     <p style="font-size:16px;line-height:24px;font-weight:600;margin:0 0 12px 0;color:#000000"><span style="font-size:20px;margin-right:4px"><img data-emoji="🎊" alt="🎊" src="https://fonts.gstatic.com/s/e/notoemoji/17.0/1f38a/32.png" loading="lazy"></span> Привітання: На патчі після запальної ночі!</p>
                                     <p style="font-size:16px;line-height:24px;font-weight:400;margin:0 0 12px 0;color:#000000"><span style="font-size:20px;margin-right:4px"><img data-emoji="📩" alt="📩" src="https://fonts.gstatic.com/s/e/notoemoji/17.0/1f4e9/32.png" loading="lazy"></span> Використати можна на сайті або в магазинах PROSTOR</p>
                                 </td>
@@ -111,26 +118,26 @@
                             <tr>
                                 <td style="background-color:#c6fdd2;padding:24px 48px" align="left">
                                     <p style="font-size:24px;line-height:48px;font-weight:700;color:#ec018c;margin:0 0 16px 0;font-family:Arial,Tahoma,Verdana,sans-serif">Умови використання:</p>
-                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:12px">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:12px;width:100%">
                                         <tbody>
                                             <tr>
-                                                <td valign="middle" style="padding-right:12px"><img src="https://ci3.googleusercontent.com/meips/ADKq_NbgzNlTZi2dEeV69M-IN4gac5EHLTlUC2Y4x_auz-T_3SgawItytQ5kjXnnVRw6mc_8y_XcYEzjKiNuhQ3w_GzBpJsVsN1SSZXcl5ivxbbXizJe0pZCXE65O6BkGppOCzomOnsqv4yFBEo=s0-d-e1-ft#https://pics.esputnik.com/repository/home/96499/images/msg/4289382/1763629308243.png" alt="Умова 1" width="48" height="48" style="display:block"></td>
+                                                <td valign="middle" width="48" style="width:48px;min-width:48px;padding-right:12px"><img src="https://ci3.googleusercontent.com/meips/ADKq_NbgzNlTZi2dEeV69M-IN4gac5EHLTlUC2Y4x_auz-T_3SgawItytQ5kjXnnVRw6mc_8y_XcYEzjKiNuhQ3w_GzBpJsVsN1SSZXcl5ivxbbXizJe0pZCXE65O6BkGppOCzomOnsqv4yFBEo=s0-d-e1-ft#https://pics.esputnik.com/repository/home/96499/images/msg/4289382/1763629308243.png" alt="Умова 1" width="48" height="48" class="icon-img" style="display:block;width:48px;height:48px"></td>
                                                 <td valign="middle" style="font-size:16px;line-height:30px;font-weight:400;color:#000000">Навіщо відкладати приємне на потім? Користуйся подарунком вже зараз.</td>
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:12px">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:12px;width:100%">
                                         <tbody>
                                             <tr>
-                                                <td valign="middle" style="padding-right:12px"><img src="https://ci3.googleusercontent.com/meips/ADKq_NYoyp9yjMqzCO2shNIJJW4hKBu6pN-F0QAPNIzadfSC2pf0ZmMQ7dGHtp20OzHqK-ZpWGEpav5JoWLR2COJfMdPcv9JIgbgNlvShDUYRA39xGG-0dCg0_NoI-zktqKfoCdtPwe8DX6XqDg=s0-d-e1-ft#https://pics.esputnik.com/repository/home/96499/images/msg/4289382/1763629319643.png" alt="Умова 2" width="48" height="48" style="display:block"></td>
+                                                <td valign="middle" width="48" style="width:48px;min-width:48px;padding-right:12px"><img src="https://ci3.googleusercontent.com/meips/ADKq_NYoyp9yjMqzCO2shNIJJW4hKBu6pN-F0QAPNIzadfSC2pf0ZmMQ7dGHtp20OzHqK-ZpWGEpav5JoWLR2COJfMdPcv9JIgbgNlvShDUYRA39xGG-0dCg0_NoI-zktqKfoCdtPwe8DX6XqDg=s0-d-e1-ft#https://pics.esputnik.com/repository/home/96499/images/msg/4289382/1763629319643.png" alt="Умова 2" width="48" height="48" class="icon-img" style="display:block;width:48px;height:48px"></td>
                                                 <td valign="middle" style="font-size:16px;line-height:30px;font-weight:400;color:#000000">Як би нам не хотілося тебе тішити щодня, але цей сертифікат можна використати тільки 1 раз.</td>
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="width:100%">
                                         <tbody>
                                             <tr>
-                                                <td valign="middle" style="padding-right:12px"><img src="https://ci3.googleusercontent.com/meips/ADKq_NaSqd21SDNbiuNpkCzB-XLWuDKRMlevApMRHKc3aXdgrSCgukPJET8JiUdqw1gkoxPr9LCQKT5EAoot3tRfZ5UU_Xh8Lhz_Qhl_Gv7uR5GSnNjgWNDZm8CD-j-gMP81HunDlwtYX5yBllY=s0-d-e1-ft#https://pics.esputnik.com/repository/home/96499/images/msg/4289382/1763629328515.png" alt="Умова 3" width="48" height="48" style="display:block"></td>
+                                                <td valign="middle" width="48" style="width:48px;min-width:48px;padding-right:12px"><img src="https://ci3.googleusercontent.com/meips/ADKq_NaSqd21SDNbiuNpkCzB-XLWuDKRMlevApMRHKc3aXdgrSCgukPJET8JiUdqw1gkoxPr9LCQKT5EAoot3tRfZ5UU_Xh8Lhz_Qhl_Gv7uR5GSnNjgWNDZm8CD-j-gMP81HunDlwtYX5yBllY=s0-d-e1-ft#https://pics.esputnik.com/repository/home/96499/images/msg/4289382/1763629328515.png" alt="Умова 3" width="48" height="48" class="icon-img" style="display:block;width:48px;height:48px"></td>
                                                 <td valign="middle" style="font-size:16px;line-height:30px;font-weight:400;color:#000000">Не обмежуй себе: якщо купуєш на суму меншу, ніж номінал сертифіката — різниця не повертається і не зберігається. Але ти завжди можеш доплатити.</td>
                                             </tr>
                                         </tbody>
@@ -140,18 +147,18 @@
                             <tr>
                                 <td style="background-color:#c6fdd2;padding:24px 48px" align="left">
                                     <p style="font-size:24px;line-height:48px;font-weight:700;color:#ec018c;margin:0 0 16px 0;font-family:Arial,Tahoma,Verdana,sans-serif">Як використати?</p>
-                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:12px">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:12px;width:100%">
                                         <tbody>
                                             <tr>
-                                                <td valign="middle" style="padding-right:12px"><img src="https://ci3.googleusercontent.com/meips/ADKq_NbgzNlTZi2dEeV69M-IN4gac5EHLTlUC2Y4x_auz-T_3SgawItytQ5kjXnnVRw6mc_8y_XcYEzjKiNuhQ3w_GzBpJsVsN1SSZXcl5ivxbbXizJe0pZCXE65O6BkGppOCzomOnsqv4yFBEo=s0-d-e1-ft#https://pics.esputnik.com/repository/home/96499/images/msg/4289382/1763629308243.png" alt="Крок 1" width="48" height="48" style="display:block"></td>
+                                                <td valign="middle" width="48" style="width:48px;min-width:48px;padding-right:12px"><img src="https://ci3.googleusercontent.com/meips/ADKq_NbgzNlTZi2dEeV69M-IN4gac5EHLTlUC2Y4x_auz-T_3SgawItytQ5kjXnnVRw6mc_8y_XcYEzjKiNuhQ3w_GzBpJsVsN1SSZXcl5ivxbbXizJe0pZCXE65O6BkGppOCzomOnsqv4yFBEo=s0-d-e1-ft#https://pics.esputnik.com/repository/home/96499/images/msg/4289382/1763629308243.png" alt="Крок 1" width="48" height="48" class="icon-img" style="display:block;width:48px;height:48px"></td>
                                                 <td valign="middle" style="font-size:16px;line-height:30px;font-weight:400;color:#000000">Обрати бажане у магазинах PROSTOR або на сайті.</td>
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="width:100%">
                                         <tbody>
                                             <tr>
-                                                <td valign="middle" style="padding-right:12px"><img src="https://ci3.googleusercontent.com/meips/ADKq_NYoyp9yjMqzCO2shNIJJW4hKBu6pN-F0QAPNIzadfSC2pf0ZmMQ7dGHtp20OzHqK-ZpWGEpav5JoWLR2COJfMdPcv9JIgbgNlvShDUYRA39xGG-0dCg0_NoI-zktqKfoCdtPwe8DX6XqDg=s0-d-e1-ft#https://pics.esputnik.com/repository/home/96499/images/msg/4289382/1763629319643.png" alt="Крок 2" width="48" height="48" style="display:block"></td>
+                                                <td valign="middle" width="48" style="width:48px;min-width:48px;padding-right:12px"><img src="https://ci3.googleusercontent.com/meips/ADKq_NYoyp9yjMqzCO2shNIJJW4hKBu6pN-F0QAPNIzadfSC2pf0ZmMQ7dGHtp20OzHqK-ZpWGEpav5JoWLR2COJfMdPcv9JIgbgNlvShDUYRA39xGG-0dCg0_NoI-zktqKfoCdtPwe8DX6XqDg=s0-d-e1-ft#https://pics.esputnik.com/repository/home/96499/images/msg/4289382/1763629319643.png" alt="Крок 2" width="48" height="48" class="icon-img" style="display:block;width:48px;height:48px"></td>
                                                 <td valign="middle" style="font-size:16px;line-height:30px;font-weight:400;color:#000000">Мати цей сертифікат: роздрукувати або пред’явити на касі.</td>
                                             </tr>
                                         </tbody>
